@@ -11,7 +11,7 @@ app.use(express.json());
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Welcome to Express Back End App");
+  res.send("Welcome to Recipe Book Back End App");
 });
 
 // EXPORT
