@@ -47,11 +47,33 @@ VALUES
 INSERT INTO pots_pans
 (name, image, description)
 VALUES
-(),
-();
+('French Skillet', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx_qhL_96Ce5bkCv3GdhrWuWjRyOLK1F1F1A&usqp=CAU', 'A french skillet is a pan for cooking that is essentially a combination of frying and sauté pans in shape. The sides of the skillet are flared outward, meaning they slope toward the bottom of the pan instead of going straight up.'),
+('Fry Pan', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4AISayTFbQ7PCEGNF0Q4TMokwYXsTa7Gow&usqp=CAU', 'A Fry Pan is a flat-bottomed pan, usually about eight to 12 inches in diameter, with low outward flaring sides and a long handle. Modern-day Fry Pans are usually made out of stainless steel or aluminum; however, other materials used in its construction can include cast iron or copper as well.'),
+('Wok', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStNpor1xnDG-imBX0rjmBa_q0mpkOl8c7bbw&usqp=CAU', 'A wok is a thin-walled cooking pan, shaped like a shallow bowl with handles, widely used in Chinese-style cooking. The wok has a round bottom that concentrates heat, cooking food quickly with relatively little oil.'),
+('Grill Pan', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzddYPWCU8gkaNQGYwRYTV9yIGxMUjqRqiSQ&usqp=CAU', 'A grill pan is a wide, shallow metal vessel used to contain food that is being cooked under a grill.'),
+('Sauce Pan', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc06k7Faj--Lch9TR8Mi07dLR2qcCzjXGX2Q&usqp=CAU', 'A saucepan is a deep stovetop pan with a long handle and, usually, a lid. You might use a saucepan to cook sauce, or for the macaroni from your box of macaroni and cheese. Saucepans are made out of various materials, from stainless steel and aluminum to copper and enamel-coated metal.'),
+('Saucier', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhi3_AH9Z4Lg8RJjvcQEawU-7JkOnsYkUYKQ&usqp=CAU', 'As a shorter and different shaped version of a sauce pan, the saucier is a pan often used for preparations requiring more repetitive motions with the ingredients in the pan, such as stirring or whisking.'),
+('Double Boiler', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHMMKA-kOj3a_Hoa8NHBGe2qayf0LXBRXxgg&usqp=CAU', 'A double boiler is a cooking utensil consisting of two saucepans fitting together so that the contents of the upper can be cooked or heated by boiling water in the lower.'),
+('Saute Pan', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLVnqqhWdCSCY8rbmXFRv0WswIndVpz2dGvg&usqp=CAU', 'A sauté pan, from the French verb meaning to jump (sauter), has a wide, flat bottom and relatively tall, vertical sides.'),
+('Multi Pot', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpKDb7Tn-glfTIsXkFUWMEmAlzVTlp5cgvbw&usqp=CAU', 'A multi pot is also known as a  multifunction cooker that allows you to steam your favorite vegetables, cook pasta and use it as a large stock pot.'),
+('Soup Pot or Stock Pot', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStLMIIsZfIZp3eUUbpUpxoz5Bc12wHaF0K1g&usqp=CAU', 'A large, deep pot that is most often used to make stock, soup, stew, chili, and to boil noodles, pasta, corn, vegetables, and seafood. Commonly made of stainless steel, Stockpots are available in a variety of sizes from 8 quart to 36 quarts for general home use and larger sizes for commercial use.'),
+('Roaster Pan', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS27gDbq8gntj7OWvR2RPTMyT-vLj2NsKt2A&usqp=CAU', 'A roasting pan is a piece of cookware used for roasting meat in an oven, either with or without vegetables or other ingredients. A roasting pan may be used with a rack that sits inside the pan and lets the meat sit above the fat and juice drippings.'),
+('Braiser', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSraPDgsoGN5Gso5pK2mEjepwhkNkfkwG-zYg&usqp=CAU', 'A brasier is similar to a french oven in shape and appearance but about 2 to 3 inches in height. It is good for making gravies and such since it holds heat extremely well.'),
+('French Oven', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS412kbsXFoh0UQJpnd2rO3er2hmUZIwCcc-w&usqp=CAU', 'French ovens are used to cooking and baking a variety of dishes. A French oven is the name for a large pot used for cooking and baking. This pot can be fairly large and round, with a flat bottom and often comes with a tight fitting lid.'),
+('Cast Iron Pan or Deep Skillet', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTszS1GUajHh7YSm9iWVg522ieq3UcmvzZgoQ&usqp=CAU', 'A cast iron, an alloy of iron that contains 2 to 4 percent carbon, along with varying amounts of silicon and manganese and traces of impurities such as sulfur and phosphorus. It is made by reducing iron ore in a blast furnace.');
 
 INSERT INTO cooking_styles
 (name, image, description)
 VALUES
-(),
-();
+('Grilling'),
+('Broiling'),
+('Baking'),
+('Roasting'),
+('Sauteing'),
+('Searing'),
+('Frying'),
+('Boiling'),
+('Poaching'),
+('Steaming'),
+('Blanching'),
+('Sous Vide');
