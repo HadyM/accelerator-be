@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to Recipe Book Back End App");
 });
 
-app.use("/recipe", recipeController);
+app.use("/recipes", recipeController);
 
 app.get("*", (req, res) => {
   res.status(404).send("404: Page Not Found");
