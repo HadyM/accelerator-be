@@ -65,15 +65,15 @@ VALUES
 INSERT INTO cooking_styles
 (name, image, description)
 VALUES
-('Grilling'),
-('Broiling'),
-('Baking'),
-('Roasting'),
-('Sauteing'),
-('Searing'),
-('Frying'),
-('Boiling'),
-('Poaching'),
-('Steaming'),
-('Blanching'),
-('Sous Vide');
+('Grilling', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8N3EM4gcLVyHD_jZNDyHZ867Z3_AJPHFIQ&usqp=CAU', 'Grilling involves cooking food on a rack over a heat source, usually a charcoal fire or ceramic briquettes heated by gas flames. Direct heat quickly sears the outside of food, producing distinctive robust, roasted and sometimes pleasantly charred flavors and a nice crust.'),
+('Broiling', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcqyB9dyRJT4Hf2g4mV2rKMDXvt9EJ2xdbFPprb1EGN4CEuCaFL1SVAmUES1pwtWUlPRI&usqp=CAU', 'Broiling involves cooking by exposing food to direct radiant heat, either on a grill over live coals or below a gas burner or electric coil. Broiling differs from roasting and baking in that the food is turned during the process so as to cook one side at a time.'),
+('Baking', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQUfBxp7CE09V6vRQOLhodS884DtCRa5pFiMafGdR1VQ41jOhDqdZd8s-En4vs49M_zM4&usqp=CAU', 'Baking is a process of cooking by dry heat, especially in some kind of oven. It is probably the oldest cooking method. Bakery products, which include bread, rolls, cookies, pies, pastries, and muffins, are usually prepared from flour or meal derived from some form of grain.'),
+('Roasting', 'http://pediaa.com/wp-content/uploads/2015/12/Difference-Between-Roasting-and-Baking-image-2.jpg', 'Roasting is a slow-cooking process, using indirect, diffused heat to cook its ingredients. It is a dry-heat cooking method where hot air surrounds the food and cooks it evenly on all sides at a temperature of at least 300 °F (or 150 °C). The heat can also be derived from an open flame, an oven, or another heat source.'),
+('Sauteing', 'https://www.wikihow.com/images/thumb/2/2d/Saut%C3%A9-Step-10-preview.jpg/550px-nowatermark-Saut%C3%A9-Step-10-preview.jpg', 'Sauteing is a method of cooking that uses a relatively small amount of oil or fat in a shallow pan over relatively high heat. There are various saute methods such as tossing or stiring the items in a pan large enough to hold all the ingredients.'),
+('Searing', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSsKBKt49q_JiYLaH7hPJxmIPFn3mjT8Af-jYG9AIaqzFbWCT9Nl0w-lbd9zd7fCkfPcA&usqp=CAU', 'Searing (or pan searing) is a technique used in grilling, baking, braising, roasting, sautéing, etc., in which the surface of the food (usually meat: beef, poultry, pork, seafood) is cooked at high temperature until a browned crust forms on both sides and around the outside edges.'),
+('Frying', 'https://ireallylikefood.com/wp-content/uploads/2019/11/fry-at-home-1200x675.jpg', 'Frying is the process which involves the cooking of food in hot fats or oils, usually done with a shallow oil bath in a pan over a fire or as so-called deep fat frying, in which the food is completely immersed in a deeper vessel of hot oil.'),
+('Boiling', 'https://cdn.cdnparenting.com/articles/2019/02/28170828/1060532033-H.webp', 'Boiling is the process by which a liquid turns into a vapor when it is heated to its boiling point. The change from a liquid phase to a gaseous phase occurs when the vapor pressure of the liquid is equal to the atmospheric pressure exerted on the liquid.'),
+('Poaching', 'https://www.finedininglovers.com/sites/g/files/xknfdk626/files/2020-09/23_Poaching_an_egg_%C2%A9_stockFood.jpg', 'Poaching is a moist heat method of cooking by submerging food in some kind of liquid and heating at a low temperature. This is a technique that is used to cook delicate proteins such as fish, chicken, and eggs, as well as some fruits and vegetables.'),
+('Steaming', 'https://www.lkkprofessional.com/images/inspiration/main/steaming-prep_webgrid.jpg', 'Steaming is a method of cooking that requires moist heat. The heat is created by boiling water which vaporizes into steam. The steam brings heat to the food and cooks it. Unlike boiling, the food is separate from the water and only comes into direct contact with the steam.'),
+('Blanching', 'https://hotcheapeasy.files.wordpress.com/2011/09/2011-emmes-bday-freezing-tomatoes-029.jpg', 'Blanching is scalding vegetables in boiling water or steam for a short time. It is typically followed by quick, thorough cooling in very cold or ice water. Blanching stops enzyme actions which otherwise cause loss of flavor, color and texture.'),
+('Sous Vide', 'https://res.cloudinary.com/jerrick/image/upload/v1612828429/6021cf0d00a546001cd52078.jpg', 'Sous vide is a low-temperature cooking method where food is vacuum-sealed and slowly cooked in a water bath. French for under vacuum, sous vide uses heated water to gently cook food so that it stays juicy and flavorful. The water temperature is well below simmering, anywhere from 125 degrees F to 195 degrees F.');
