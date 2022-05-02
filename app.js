@@ -6,6 +6,7 @@ const express = require("express");
 const app = express();
 const recipeController = require("./controllers/recipeController");
 const cutStylesController = require("./controllers/cutStylesController");
+const knivesController = require("./controllers/knivesController");
 
 // MIDDLEWARE
 app.use(cors());
@@ -18,6 +19,7 @@ app.get("/", (req, res) => {
 
 app.use("/recipe", recipeController);
 app.use("/cuttingstyle", cutStylesController);
+app.use("/knife", knivesController);
 
 app.get("*", (req, res) => {
   res.status(404).send("404: Page Not Found");
