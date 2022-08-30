@@ -19,11 +19,11 @@ app.get("/", (req, res) => {
   res.send("Welcome to Recipe Book Back End App");
 });
 
-app.use("/recipe", recipeController);
+app.use("/recipes", recipeController);
 app.use("/cuttingstyle", cutStylesController);
-app.use("/knife", knivesController);
+app.use("/knives", knivesController);
 app.use("/potsandpans", potsAndPansController);
-app.use("/cookingstyle", cookingStylesController);
+app.use("/cookingstyles", cookingStylesController);
 
 app.get("*", (req, res) => {
   res.status(404).send("404: Page Not Found");
