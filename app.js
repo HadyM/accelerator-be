@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/recipes", recipeController);
-app.use("/cuttingstyle", cutStylesController);
+app.use("/cuttingstyles", cutStylesController);
 app.use("/knives", knivesController);
 app.use("/potsandpans", potsAndPansController);
 app.use("/cookingstyles", cookingStylesController);

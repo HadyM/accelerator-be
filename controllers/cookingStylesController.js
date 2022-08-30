@@ -16,4 +16,4 @@ cookingstyles.get("/:id", async (req, res) => {
   res.status(200).json(cookingStyle);
 });
 
-module.exports = cookingstyle;
+module.exports = cookingstyles;

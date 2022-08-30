@@ -13,4 +13,4 @@ knives.get("/:id", async (req, res) => {
   res.status(200).json(oneKnife);
 });
 
-module.exports = knife;
+module.exports = knives;

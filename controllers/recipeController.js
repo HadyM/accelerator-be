@@ -36,4 +36,4 @@ recipes.delete("/:id", async (req, res) => {
   res.status(200).json(deletedRecipe);
 });
 
-module.exports = recipe;
+module.exports = recipes;
