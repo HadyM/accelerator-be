@@ -1,3 +1,8 @@
+DROP DATABASE IF EXISTS recipe-book-backend-app;
+CREATE DATABASE recipe-book-backend-app;
+
+\c recipe-book-backend-app;
+
 DROP TABLE IF EXISTS recipes CASCADE;
 
 CREATE TABLE recipes (

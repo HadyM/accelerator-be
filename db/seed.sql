@@ -1,3 +1,5 @@
+\c recipe-book-backend-app;
+
 INSERT INTO recipes
 (title, image, description, time, ingredients, instructions)
 VALUES
