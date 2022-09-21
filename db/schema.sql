@@ -11,6 +11,7 @@ CREATE TABLE recipes (
     image TEXT NOT NULL,
     description TEXT NOT NULL,
     time TEXT NOT NULL,
+    cookingstyle TEXT NOT NULL,
     ingredients TEXT NOT NULL,
     instructions TEXT NOT NULL
 );

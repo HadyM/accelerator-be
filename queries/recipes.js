@@ -21,15 +21,23 @@ const getRecipe = async (id) => {
 };
 
 const addRecipe = async (recipe) => {
-  const { title, image, description, time, ingredients, instruction } = recipe;
+  const {
+    title,
+    image,
+    description,
+    time,
+    cookingstyle,
+    ingredients,
+    instruction,
+  } = recipe;
   try {
     const newRecipe = await db.one(
       `INSERT INTO recipes
-            (title, image, description, time, ingredients, instruction)
+            (title, image, description, time, cookingstyle, ingredients, instruction)
             VALUES
-            ($1, $2, $3, $4, $5, $6)
+            ($1, $2, $3, $4, $5, $6, $7)
             RETURNING *`,
-      [title, image, description, time, ingredients, instruction],
+      [title, image, description, time, cookingstyle, ingredients, instruction],
     );
     return { success: true, payload: newRecipe };
   } catch (error) {
@@ -39,14 +47,31 @@ const addRecipe = async (recipe) => {
 };
 
 const updateRecipe = async (id, recipe) => {
-  const { title, image, description, time, ingredients, instruction } = recipe;
+  const {
+    title,
+    image,
+    description,
+    time,
+    cookingstyle,
+    ingredients,
+    instruction,
+  } = recipe;
   try {
     const updatedRecipe = await db.one(
       `UPDATE recipes SET
-            title = $1, image = $2, description = $3, time = $4, ingredients = $5, instruction = $6
-            WHERE id = $7
+            title = $1, image = $2, description = $3, time = $4, cookingstyle = $5, ingredients = $6, instruction = $7
+            WHERE id = $8
             RETURNING *`,
-      [title, image, description, time, ingredients, instruction, id],
+      [
+        title,
+        image,
+        description,
+        time,
+        cookingstyle,
+        ingredients,
+        instruction,
+        id,
+      ],
     );
     return { success: true, payload: updatedRecipe };
   } catch (error) {
