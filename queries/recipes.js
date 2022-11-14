@@ -28,16 +28,24 @@ const addRecipe = async (recipe) => {
     time,
     cookingstyle,
     ingredients,
-    instruction,
+    instructions,
   } = recipe;
   try {
     const newRecipe = await db.one(
       `INSERT INTO recipes
-            (title, image, description, time, cookingstyle, ingredients, instruction)
+            (title, image, description, time, cookingstyle, ingredients, instructions)
             VALUES
             ($1, $2, $3, $4, $5, $6, $7)
             RETURNING *`,
-      [title, image, description, time, cookingstyle, ingredients, instruction],
+      [
+        title,
+        image,
+        description,
+        time,
+        cookingstyle,
+        ingredients,
+        instructions,
+      ],
     );
     return { success: true, payload: newRecipe };
   } catch (error) {
@@ -54,12 +62,12 @@ const updateRecipe = async (id, recipe) => {
     time,
     cookingstyle,
     ingredients,
-    instruction,
+    instructions,
   } = recipe;
   try {
     const updatedRecipe = await db.one(
       `UPDATE recipes SET
-            title = $1, image = $2, description = $3, time = $4, cookingstyle = $5, ingredients = $6, instruction = $7
+            title = $1, image = $2, description = $3, time = $4, cookingstyle = $5, ingredients = $6, instructions = $7
             WHERE id = $8
             RETURNING *`,
       [
@@ -69,7 +77,7 @@ const updateRecipe = async (id, recipe) => {
         time,
         cookingstyle,
         ingredients,
-        instruction,
+        instructions,
         id,
       ],
     );
